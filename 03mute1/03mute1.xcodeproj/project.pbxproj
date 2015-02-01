@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4C009D3D1A7DD20200193A7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C009D3C1A7DD20200193A7F /* main.m */; };
+		4C009D451A7DD31E00193A7F /* Volume.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C009D441A7DD31E00193A7F /* Volume.m */; };
+		4C009D481A7DD34E00193A7F /* MuteVolume.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C009D471A7DD34E00193A7F /* MuteVolume.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		4C009D391A7DD20200193A7F /* 03mute1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 03mute1; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C009D3C1A7DD20200193A7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C009D431A7DD31E00193A7F /* Volume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Volume.h; sourceTree = "<group>"; };
+		4C009D441A7DD31E00193A7F /* Volume.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Volume.m; sourceTree = "<group>"; };
+		4C009D461A7DD34E00193A7F /* MuteVolume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MuteVolume.h; sourceTree = "<group>"; };
+		4C009D471A7DD34E00193A7F /* MuteVolume.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MuteVolume.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +63,11 @@
 		4C009D3B1A7DD20200193A7F /* 03mute1 */ = {
 			isa = PBXGroup;
 			children = (
+				4C009D431A7DD31E00193A7F /* Volume.h */,
+				4C009D441A7DD31E00193A7F /* Volume.m */,
 				4C009D3C1A7DD20200193A7F /* main.m */,
+				4C009D461A7DD34E00193A7F /* MuteVolume.h */,
+				4C009D471A7DD34E00193A7F /* MuteVolume.m */,
 			);
 			path = 03mute1;
 			sourceTree = "<group>";
@@ -119,6 +129,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C009D3D1A7DD20200193A7F /* main.m in Sources */,
+				4C009D481A7DD34E00193A7F /* MuteVolume.m in Sources */,
+				4C009D451A7DD31E00193A7F /* Volume.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +244,7 @@
 				4C009D421A7DD20200193A7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
