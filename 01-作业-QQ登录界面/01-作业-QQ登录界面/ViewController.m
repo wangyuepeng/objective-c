@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  01.加法计算器
+//  01-作业-QQ登录界面
 //
-//  Created by 王玥鹏 on 15/2/3.
+//  Created by 王玥鹏 on 15/2/5.
 //  Copyright (c) 2015年 wang yuepeng. All rights reserved.
 //
 
@@ -24,19 +24,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)compute
+- (void)login
 {
-    NSLog(@"进行计算");
-    NSString *num1 = self.num1.text;
-    NSString *num2 = self.num2.text;
-    int result = num1.intValue + num2.intValue;
-    self.result.text = [NSString stringWithFormat:@"%d",result];
+    NSLog(@"QQ号码：%@",self.qqNumber.text);
+    NSLog(@"QQ密码：%@",self.pwd.text);
     
-    //关闭键盘
-    //[self.num1 resignFirstResponder];
-    //[self.num2 resignFirstResponder];
-    
-    //强行关闭键盘
     [self.view endEditing:YES];
 }
 
