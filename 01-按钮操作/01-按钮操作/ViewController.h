@@ -17,10 +17,13 @@
 @property (weak, nonatomic) IBOutlet UIButton *rightButton;
 @property (weak, nonatomic) IBOutlet UIButton *plusButton;
 @property (weak, nonatomic) IBOutlet UIButton *minusButton;
+@property (weak, nonatomic) IBOutlet UIButton *leftRotate;
+@property (weak, nonatomic) IBOutlet UIButton *rightRotate;
 
 
 - (IBAction)move:(UIButton *)sender;
 - (IBAction)zoom:(UIButton *)button;
+- (IBAction)rotate:(UIButton *)button;
 
 
 

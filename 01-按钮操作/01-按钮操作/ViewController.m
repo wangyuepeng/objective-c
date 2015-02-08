@@ -72,4 +72,15 @@ typedef enum {
     
     [UIView commitAnimations];
 }
+
+- (IBAction)rotate:(UIButton *)button
+{
+    NSLog(@"----");
+    if (button.tag == 16) {
+        self.imageButton.transform = CGAffineTransformRotate(self.imageButton.transform, -2.0);
+    }else{
+        self.imageButton.transform = CGAffineTransformRotate(self.imageButton.transform, 2.0);
+    }
+    
+}
 @end

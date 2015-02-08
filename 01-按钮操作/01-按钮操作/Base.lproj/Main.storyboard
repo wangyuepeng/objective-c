@@ -62,7 +62,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Owj-WV-QqH">
-                                <rect key="frame" x="186" y="292" width="30" height="30"/>
+                                <rect key="frame" x="186" y="264" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="plus_normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -73,7 +73,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XiX-ce-mYJ">
-                                <rect key="frame" x="246" y="292" width="30" height="30"/>
+                                <rect key="frame" x="246" y="264" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="minus_normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -83,6 +83,28 @@
                                     <action selector="zoom:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="M3k-h3-eVS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7KC-TE-UMm">
+                                <rect key="frame" x="246" y="320" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="right_rotate_normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="right_rotate_highlighted"/>
+                                <connections>
+                                    <action selector="rotate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cFB-Ey-Kik"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="o6f-OS-vSc">
+                                <rect key="frame" x="186" y="320" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="left_rotate_normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="left_rotate_highlighted"/>
+                                <connections>
+                                    <action selector="rotate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2pT-MU-L6M"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -90,9 +112,11 @@
                         <outlet property="bottomButton" destination="Nxf-JA-Cfu" id="sBr-sQ-CL3"/>
                         <outlet property="imageButton" destination="k4B-xW-AdX" id="eWh-3t-4rG"/>
                         <outlet property="leftButton" destination="9ft-0f-zSv" id="asx-Qu-WPY"/>
+                        <outlet property="leftRotate" destination="o6f-OS-vSc" id="R6n-B0-Fvt"/>
                         <outlet property="minusButton" destination="XiX-ce-mYJ" id="8k7-y9-zvU"/>
                         <outlet property="plusButton" destination="Owj-WV-QqH" id="xRF-1M-vaO"/>
                         <outlet property="rightButton" destination="SJc-tE-Gbf" id="7yi-SU-do3"/>
+                        <outlet property="rightRotate" destination="7KC-TE-UMm" id="mcG-aH-kgl"/>
                         <outlet property="topButton" destination="bJ5-7h-HAx" id="oPW-Hn-EoE"/>
                     </connections>
                 </viewController>
@@ -106,11 +130,15 @@
         <image name="btn_01" width="100" height="100"/>
         <image name="btn_02" width="100" height="100"/>
         <image name="left_normal" width="96" height="96"/>
+        <image name="left_rotate_highlighted" width="96" height="96"/>
+        <image name="left_rotate_normal" width="96" height="96"/>
         <image name="minus_highlighted" width="96" height="96"/>
         <image name="minus_normal" width="96" height="96"/>
         <image name="plus_highlighted" width="96" height="96"/>
         <image name="plus_normal" width="96" height="96"/>
         <image name="right_normal" width="96" height="96"/>
+        <image name="right_rotate_highlighted" width="96" height="96"/>
+        <image name="right_rotate_normal" width="96" height="96"/>
         <image name="top_normal" width="96" height="96"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
